@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-2.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Trabajemos Juntos</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <img src="assets/img/logo.svg" alt="logo">
+        </a>
+
+
+        <a href="index.html" class="back">
+            <p>Regresar</p>
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+    </header>
+
+    <section class="banner banner--work-together">
+        <div id="particles-js"></div>
+
+        <h1>Asi que ya estas listo?</h1>
+        <p>Llena el formulario para conocer mas detalles sobre ti y el preyecto que necesitas</p>
+    </section>
+
+    <section class="form__contact">
+        <div class="form__container form__container--1">
+            <form action="" class="formulario formulario--show formulario--1">
+                <h2 class="form__title">informacion sobre el proyecto</h2>
+
+                <div class="formulario__item formulario__item--item1">
+                    <label for="business" class="formulario__item__title">¿Cual es el nombre de tu negocio?</label>
+                    <input type="text" name="business" class="formulario__input" placeholder="Nombre del negocio">
+                </div>
+
+                <div class="formulario__item formulario__item--item2">
+                    <label for="service" class="formulario__item__title">¿Que servicio requieres?</label>
+                    <select type="text" name="service" class="formulario__input">
+                        <option class="service__option" value="Default">-- Selecciona un servicio --</option>
+                        <option class="service__option" value="diseño web">Diseño web</option>
+                        <option class="service__option" value="desarrollo frontend">Desarrollo Frontend</option>
+                        <option class="service__option" value="desarrollo bakcend">Desarrollo Bakcend</option>
+                        <option class="service__option" value="proyecto completo">Proyecto Completo</option>
+                    </select>
+                </div>
+
+                <div class="formulario__item formulario__item--item3">
+                    <label for="budget" class="formulario__item__title">¿Cual es tu presupuesto?</label>
+                    <input type="number" name="budget" class="formulario__input" placeholder="Ingresa tu presupuesto">
+                </div>
+
+                <div class="formulario__item formulario__item--item4">
+                    <label for="purpose-website" class="formulario__item__title">¿Que deseas hacer con tu sitio web?</label>
+                    <textarea name="purpose-website" class="formulario__input formulario__input__area"></textarea>
+                </div>
+
+                <div class="formulario__buttons">
+                    <input type="submit" class="form__button form__button--next" value="Siguiente">
+                    <!-- <button class="form__button form__button--back none">Atras</button> -->
+                </div>
+            </form>
+        </div>
+
+        <div class="form__container form__container--2">
+            <form action="" class="formulario formulario--2">
+                <h2 class="form__title">informacion sobre el proyecto</h2>
+
+                <div class="formulario__item formulario__item--item1">
+                    <label for="business" class="formulario__item__title">¿Cual es el nombre de tu negocio?</label>
+                    <input type="text" name="business" class="formulario__input" placeholder="Nombre del negocio">
+                </div>
+
+                <div class="formulario__item formulario__item--item2">
+                    <label for="service" class="formulario__item__title">¿Que servicio requieres?</label>
+                    <select type="text" name="service" class="formulario__input">
+                        <option class="service__option" value="Default">-- Selecciona un servicio --</option>
+                        <option class="service__option" value="diseño web">Diseño web</option>
+                        <option class="service__option" value="desarrollo frontend">Desarrollo Frontend</option>
+                        <option class="service__option" value="desarrollo bakcend">Desarrollo Bakcend</option>
+                        <option class="service__option" value="proyecto completo">Proyecto Completo</option>
+                    </select>
+                </div>
+
+                <div class="formulario__item formulario__item--item3">
+                    <label for="budget" class="formulario__item__title">¿Cual es tu presupuesto?</label>
+                    <input type="number" name="budget" class="formulario__input" placeholder="Ingresa tu presupuesto">
+                </div>
+
+                <div class="formulario__item formulario__item--item4">
+                    <label for="purpose-website" class="formulario__item__title">¿Que deseas hacer con tu sitio web?</label>
+                    <textarea name="purpose-website" class="formulario__input formulario__input__area"></textarea>
+                </div>
+
+                <div class="formulario__buttons">
+                    <button class="form__button form__button--back">Atras</button>
+                    <input type="submit" class="form__button form__button--send" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer__work-together">
+        <p class="copy">&copy; Nandier Ruiz - 2021</p>
+    </footer>
+
+    <script src="js/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/contact-forms.js"></script>
+</body>
+
+</html>

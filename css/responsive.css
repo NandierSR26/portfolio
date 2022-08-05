@@ -1,0 +1,674 @@
+:root {
+    --font1: 'Poppins';
+    --font2: 'Manrope';
+
+    --blue-50: #CDE8FC;
+    --blue-100: #9BD1F8;
+    --blue-200: #69BAF5;
+    --blue-300: #37A3F1;
+    --blue-400: #108BE3;
+    --blue-500: #0C6CB0;
+    --blue-600: #084876;
+    --blue-700: #063658;
+    --blue-800: #041E2F;
+    --blue-900: #021521;
+    --blue-1000: #03020F;
+
+    --green-500: #2ca84f;
+    --green-800: #0D3117;
+    --green-900: #06180B;
+
+    --yellow-500: #D8DB3D;
+    --yellow-800: #646613;
+    --yellow-900: #43440C;
+
+    --red-100: #F5C8C8;
+    --red-500: #DB3D3D;
+    --red-800: #661313;
+    --red-900: #440C0C;
+
+    --grey: #a4a4a4;
+
+    --padding: 0 128px;
+}
+
+@media (max-width: 1300px) {
+    .about-me p {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    /* BANNER MEDIA QUERIES */
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .btn-link a {
+        font-size: 0.8rem;
+    }
+
+    .btn-link i {
+        font-size: 0.8rem;
+    }
+
+    .btn-look-projects {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .banner-options {
+        gap: 1.2rem;
+    }
+
+
+    /* portafolio media queries */
+    .portafolio-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .portafolio-title p {
+        font-size: 0.8rem;
+    }
+
+    .portafolio-title h2::before,
+    .portafolio-title h2::after {
+        width: 35%;
+    }
+
+    .portafolio-items {
+        grid-template-columns: 1fr;
+    }
+
+    .portafolio-item-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .portafolio-item-text p {
+        font-size: 0.8rem;
+    }
+
+    .portafolio-item-text a {
+        font-size: 0.8rem;
+    }
+
+
+    /* about media queries */
+    .about {
+        display: block;
+        padding-top: 100px;
+    }
+
+    .about-me {
+        overflow: visible;
+        padding-top: 200px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .about-me h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-me p {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .my-face {
+        display: none;
+    }
+
+    .my-face--mobile {
+        position: absolute;
+        display: block;
+        width: 300px;
+        height: 300px;
+        top: -150px;
+    }
+
+}
+
+
+@media (max-width: 1010px) {
+
+    /* HEADER MEDIA QUERIES */
+    .header {
+        padding: 0 80px;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    /* BANNER MEDIA QUERIES */
+    .banner {
+        padding: 150px 80px 150px 80px;
+    }
+
+    /* FEATURES MEDIA QUERIES */
+    .features-section {
+        padding: 200px 80px 200px 80px;
+    }
+
+    .features {
+        gap: 4rem;
+    }
+
+    .feature-title {
+        font-size: 1rem;
+    }
+
+    .feature p {
+        font-size: 0.7rem;
+    }
+
+    .feature-icon {
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .feature-icon i {
+        font-size: 1.5rem;
+    }
+
+    /* PORTAFOLIO MEDIA QUERIES */
+    .portafolio {
+        padding: 0 80px 250px 80px;
+    }
+
+    /* ABOUT MEDIA QUERIES */
+    .about {
+        padding: 100px 80px 500px 80px;
+    }
+
+    /* FOOTER MEDIA QUERIES */
+    .footer {
+        padding: 350px 80px 100px 80px
+    }
+
+    .footer-logo {
+        width: 4rem;
+    }
+
+    .footer-column h2 {
+        font-size: 1.2rem;
+    }
+
+    .column-item {
+        font-size: 0.8rem;
+    }
+
+    .copy {
+        font-size: 0.8rem;
+    }
+
+
+    /* ---------------------------------------- WORK TOGETHER ---------------------------------------- */
+
+    /* FORM-CONTACT MEDIA QUERIES  */
+    .form-contact {
+        padding: 0 80px;
+    }
+
+    .form__container {
+        padding: 0 80px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    /* header media queries */
+    .btn-look-projects--header {
+        display: none;
+    }
+
+    /* banner media queries */
+    .banner-text {
+        gap: 1.5rem;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle-item {
+        font-size: 0.7rem;
+    }
+
+    .banner-options {
+        gap: 1rem;
+    }
+
+    .btn-look-projects {
+        padding: 0.5rem 1rem;
+    }
+
+    .btn-look-projects a {
+        font-size: 0.7rem;
+    }
+
+    .btn-link a {
+        font-size: 0.7rem;
+    }
+
+    .btn-link i {
+        font-size: 0.7rem;
+    }
+
+
+    /* ABOUT MEDIA QUERIES */
+    .carousel-items {
+        gap: 4rem;
+    }
+
+    .carousel-item {
+        min-width: 4rem;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    /* HEADER MEDIA QUERIES  */
+    .header {
+        padding: 0 40px;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+        z-index: 100;
+    }
+
+    .logo img {
+        width: 3rem;
+    }
+
+    .menu {
+        display: flex;
+        z-index: 99;
+    }
+
+    .menu__links {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+        justify-content: center;
+        padding-top: 100px;
+        z-index: 99;
+    }
+
+    .menu__links--show {
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__item {
+        font-size: 1.5rem;
+    }
+
+    .linea-1,
+    .linea-2,
+    .linea-3 {
+        height: 5px;
+    }
+
+    /* BANNER MEDIA QUERIES */
+    .banner {
+        padding: 150px 40px 150px 40px;
+    }
+
+    /* FEATURES MEDIA QUERIES */
+    .features-section {
+        padding: 200px 40px 200px 40px;
+    }
+
+    /* PORTAFOLIO MEDIA QUERIES */
+    .portafolio {
+        padding: 0px 40px 250px 40px;
+    }
+
+    /* ABOUT MEDIA QUERIES */
+    .about {
+        padding: 100px 40px 300px 40px;
+    }
+
+    /* FOOTER MEDIA QUERIES */
+
+    .work-together {
+        height: 300px;
+        top: -150px;
+        gap: 1rem;
+    }
+
+
+
+    /* ---------------------------------------- WORK TOGETHER ---------------------------------------- */
+
+    /* FORM-CONTACT MEDIA QUERIES  */
+    .form-contact {
+        padding: 0 40px;
+    }
+
+    .form__container {
+        padding: 0 40px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    body {
+        background-color: var(--blue-800);
+    }
+
+    /* BANNER MEDIA QUERIES */
+    .banner {
+        padding: 100px 40px 100px 40px;
+    }
+
+    .banner-content {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .banner-text {
+        width: fit-content;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+
+    .banner-image {
+        margin: 0 auto;
+    }
+
+    .banner-options {
+        padding: 0;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle-item {
+        font-size: 1rem;
+    }
+
+    .btn-look-projects {
+        padding: 0.8rem 1.3rem;
+        font-size: 1rem;
+    }
+
+    .btn-link a {
+        font-size: 1rem;
+    }
+
+    .btn-link i {
+        font-size: 1rem;
+    }
+
+    .banner-image {
+        width: 90%;
+    }
+
+    /* FEATURES MEDIA QUERIES */
+    .features-section {
+        padding: 100px 40px 100px 40px;
+    }
+
+    .features-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .feature p {
+        padding: 0 4rem;
+    }
+
+    .feature-icon {
+        margin-bottom: 1.5rem;
+    }
+
+    .feature-title {
+        margin-bottom: .5rem;
+    }
+
+    /* PORTAFOLIO MEDIA QUERIES */
+    .portafolio {
+        padding: 100px 40px 250px 40px;
+    }
+
+    /*  ABOUT MEDIA QUERIES */
+    .about {
+        padding: 100px 40px 300px 40px;
+    }
+
+    .my-face--mobile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me {
+        padding-top: 200px;
+    }
+
+    /* FOOTER MEDIA QUERIES */
+    .footer {
+        padding: 200px 40px 100px 40px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .column-items {
+        align-items: center;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
+
+    .work-together h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .work-together p {
+        font-size: .7rem;
+    }
+
+
+
+    /* ---------------------------------------- WORK TOGETHER ---------------------------------------- */
+
+    /* FORM-CONTACT MEDIA QUERIES  */
+    .formulario__input {
+        border: 1px solid var(--blue-600);
+        background-color: var(--blue-700);
+    }
+}
+
+@media (max-width: 600px) {
+    .form__title {
+        font-size: 1.5rem;
+    }
+
+    .formulario__item__title {
+        font-size: .8rem;
+    }
+
+    .formulario__input {
+        font-size: .8rem;
+        padding: .6rem;
+    }
+
+    .formulario__item {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    /* FEATURES MEDIA QUERIES */
+    .features p {
+        padding: 0
+    }
+
+
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .portafolio-title h2::before, .portafolio-title h2::after {
+        width: 30%;
+    }
+
+    .banner--work-together h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /* BANNER MEDIA QUERIES */
+    .title h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle-item {
+        font-size: 0.8rem;
+    }
+
+    .btn-look-projects {
+        padding: 0.8rem 1.3rem;
+        font-size: 0.8rem;
+    }
+
+    .btn-link a {
+        font-size: 0.8rem;
+    }
+
+    .btn-link i {
+        font-size: 0.8rem;
+    }
+
+
+    /* ABOUT MEDIA QUERIES */
+    .my-face--mobile {
+        min-width: 150px;
+        min-height: 150px;
+    }
+
+    .my-face--mobile {
+        width: 150px;
+        height: 150px;
+        top: -75px;
+    }
+
+    .about-me {
+        padding-top: 150px;
+    }
+
+    /* FOOTER MEDI QUERIES */
+    .footer-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .work-together h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .work-together p {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 420px) {
+
+    /* BANNER MEDIA QUERIES */
+    .title h1 {
+        font-size: 1.7rem;
+    }
+
+    .banner-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portafolio-title h2::before, .portafolio-title h2::after {
+        width: 20%;
+    }
+
+    /* ABOUT MEDIA QUERIES */
+    .about-me {
+        padding: 100px 30px 30px 30px;
+    }
+
+    .carousel-skills {
+        padding: 30px;
+    }
+
+    .carousel-items {
+        gap: 2rem;
+        padding: .5rem;
+    }
+
+    .carousel-item {
+        min-width: 3rem;
+    }
+
+
+    .back p {
+        display: none;
+    }
+
+    .form__button {
+        font-size: .8rem;
+        padding: 0.5rem 1.4rem;
+    }
+}
