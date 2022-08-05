@@ -482,7 +482,7 @@ body {
 }
 
 .about-me::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
 }
 
 .about-me::-webkit-scrollbar-thumb {
