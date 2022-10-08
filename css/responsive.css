@@ -501,15 +501,6 @@
     .footer-content {
         flex-direction: column;
         gap: 4rem;
-        align-items: center;
-    }
-
-    .column-items {
-        align-items: center;
-    }
-
-    .footer-column {
-        align-items: center;
     }
 
     .work-together h2 {
@@ -664,8 +655,8 @@
     }
 
     .carousel-items {
-        gap: 2rem;
-        padding: .5rem;
+        gap: 3rem;
+        padding: .8rem;
     }
 
     .carousel-item {

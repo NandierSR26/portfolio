@@ -632,8 +632,8 @@ body {
     font-weight: 500;
 }
 
-.footer-logo {
-    width: 5rem;
+.logo--footer{
+    z-index: 0 !important;
 }
 
 .copy {
