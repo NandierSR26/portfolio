@@ -1,20 +1,41 @@
-const btnNext = document.querySelector('.form__button--next');
-const btnBack = document.querySelector('.form__button--back');
-const form1 = document.querySelector('.form__container--1');
-const form2 = document.querySelector('.form__container--2');
+const business = document.querySelector('#business');
+const service = document.querySelector('#service');
+const budget = document.querySelector('#budget');
+const purpose = document.querySelector('#purpose-website');
+const nombre = document.querySelector('#nombre');
+const email = document.querySelector('#e-mail');
 
+let campos = [business, service, budget, purpose, nombre, email];
+let pass = true;
 
-eventListeners();
-function eventListeners() {
-    btnNext.addEventListener('click', (e) => {
-        e.preventDefault();
-        form1.style.transform = 'translateX(-100%)';
-        form2.style.transform = 'translateX(-100%)';
+const btn = document.querySelector('.form__button--send');
+
+document.querySelector('.formulario')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_o8z4nof';
+
+        campos.forEach((campo, i) => {
+            if (campo.value === '') {
+                pass = false;
+            }
+        })
+
+        if (pass) {
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Send Email';
+                    alert('Sent!');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+        } else {
+            alert('Llena todos los campos obligatorios');
+        }
 
     });
-    btnBack.addEventListener('click', (e) => {
-        e.preventDefault();
-        form1.style.transform = 'translateX(0%)';
-        form2.style.transform = 'translateX(0%)';
-    });
-}

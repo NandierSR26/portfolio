@@ -48,12 +48,12 @@
 
                 <div class="formulario__item formulario__item--item1">
                     <label for="business" class="formulario__item__title">¿Cual es el nombre de tu negocio?</label>
-                    <input type="text" name="business" class="formulario__input" placeholder="Nombre del negocio">
+                    <input type="text" id="business" name="business" class="formulario__input" placeholder="Nombre del negocio">
                 </div>
 
                 <div class="formulario__item formulario__item--item2">
                     <label for="service" class="formulario__item__title">¿Que servicio requieres?</label>
-                    <select type="text" name="service" class="formulario__input">
+                    <select type="text" id="service" name="service" class="formulario__input">
                         <option class="service__option" value="Default">-- Selecciona un servicio --</option>
                         <option class="service__option" value="diseño web">Diseño web</option>
                         <option class="service__option" value="desarrollo frontend">Desarrollo Frontend</option>
@@ -64,57 +64,49 @@
 
                 <div class="formulario__item formulario__item--item3">
                     <label for="budget" class="formulario__item__title">¿Cual es tu presupuesto?</label>
-                    <input type="number" name="budget" class="formulario__input" placeholder="Ingresa tu presupuesto">
+                    <input type="number" id="budget" name="budget" class="formulario__input" placeholder="Ingresa tu presupuesto">
                 </div>
 
                 <div class="formulario__item formulario__item--item4">
-                    <label for="purpose-website" class="formulario__item__title">¿Que deseas hacer con tu sitio web?</label>
-                    <textarea name="purpose-website" class="formulario__input formulario__input__area"></textarea>
+                    <label for="purpose-website" class="formulario__item__title">¿Que deseas hacer con tu sitio
+                        web?</label>
+                    <textarea id="purpose-website" name="purpose-website" class="formulario__input formulario__input__area"></textarea>
                 </div>
 
-                <div class="formulario__buttons">
-                    <input type="submit" class="form__button form__button--next" value="Siguiente">
-                    <!-- <button class="form__button form__button--back none">Atras</button> -->
-                </div>
-            </form>
-        </div>
 
-        <div class="form__container form__container--2">
-            <form action="" class="formulario formulario--2">
-                <h2 class="form__title">informacion sobre el proyecto</h2>
+                <h2 class="form__title form__title--2">informacion sobre el solicitante</h2>
 
                 <div class="formulario__item formulario__item--item1">
-                    <label for="business" class="formulario__item__title">¿Cual es el nombre de tu negocio?</label>
-                    <input type="text" name="business" class="formulario__input" placeholder="Nombre del negocio">
+                    <label for="nombre" class="formulario__item__title">Nombre del Solicitante</label>
+                    <input type="text" id="nombre" name="nombre" class="formulario__input" placeholder="Nombre del negocio">
                 </div>
 
                 <div class="formulario__item formulario__item--item2">
-                    <label for="service" class="formulario__item__title">¿Que servicio requieres?</label>
-                    <select type="text" name="service" class="formulario__input">
-                        <option class="service__option" value="Default">-- Selecciona un servicio --</option>
-                        <option class="service__option" value="diseño web">Diseño web</option>
-                        <option class="service__option" value="desarrollo frontend">Desarrollo Frontend</option>
-                        <option class="service__option" value="desarrollo bakcend">Desarrollo Bakcend</option>
-                        <option class="service__option" value="proyecto completo">Proyecto Completo</option>
-                    </select>
+                    <label for="telefono" class="formulario__item__title">Ingresa tu telefono*</label>
+                    <input type="text" id="telefono" name="telefono" class="formulario__input" placeholder="Telefono movil u oficina">
                 </div>
 
                 <div class="formulario__item formulario__item--item3">
-                    <label for="budget" class="formulario__item__title">¿Cual es tu presupuesto?</label>
-                    <input type="number" name="budget" class="formulario__input" placeholder="Ingresa tu presupuesto">
+                    <label for="e-mail" class="formulario__item__title">Correo Electonico</label>
+                    <input type="email" id="e-mail" name="e-mail" class="formulario__input" placeholder="Ingresa tu E-mail">
                 </div>
 
                 <div class="formulario__item formulario__item--item4">
-                    <label for="purpose-website" class="formulario__item__title">¿Que deseas hacer con tu sitio web?</label>
-                    <textarea name="purpose-website" class="formulario__input formulario__input__area"></textarea>
+                    <label for="message" class="formulario__item__title">¿Deseas hacer una anotacion extra?*</label>
+                    <textarea name="message" id="message" class="formulario__input formulario__input__area"
+                        placeholder="Mensaje..."></textarea>
                 </div>
+                <p class="recomendacion">
+                    los campos con * son opcionales
+                </p>
 
                 <div class="formulario__buttons">
-                    <button class="form__button form__button--back">Atras</button>
                     <input type="submit" class="form__button form__button--send" value="Enviar">
                 </div>
+
             </form>
         </div>
+
     </section>
 
     <footer class="footer__work-together">
@@ -124,6 +116,11 @@
     <script src="js/particles.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/contact-forms.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('puzG1X--mUkFKFoE5')
+    </script>
 </body>
 
 </html>

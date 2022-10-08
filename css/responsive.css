@@ -50,11 +50,7 @@
         font-size: 0.8rem;
     }
 
-    .btn-link a {
-        font-size: 0.8rem;
-    }
-
-    .btn-link i {
+    .btn-link {
         font-size: 0.8rem;
     }
 
@@ -184,12 +180,17 @@
 
     /* ABOUT MEDIA QUERIES */
     .about {
-        padding: 100px 80px 500px 80px;
+        padding: 100px 80px 0 80px;
+    }
+
+    .carousel-skills {
+        margin: 0 80px;
+        margin-bottom: 50px;
     }
 
     /* FOOTER MEDIA QUERIES */
     .footer {
-        padding: 350px 80px 100px 80px
+        padding: 100px 80px;
     }
 
     .footer-logo {
@@ -350,7 +351,11 @@
 
     /* ABOUT MEDIA QUERIES */
     .about {
-        padding: 100px 40px 300px 40px;
+        padding: 100px 40px 0 40px;
+    }
+
+    .carousel-skills {
+        margin: 0 40px 50px 40px;
     }
 
     /* FOOTER MEDIA QUERIES */
@@ -471,7 +476,7 @@
 
     /*  ABOUT MEDIA QUERIES */
     .about {
-        padding: 100px 40px 300px 40px;
+        padding: 100px 40px 0 40px;
     }
 
     .my-face--mobile {
@@ -483,9 +488,14 @@
         padding-top: 200px;
     }
 
+    .btn__arrow__left,
+    .btn__arrow__right {
+        display: none;
+    }
+
     /* FOOTER MEDIA QUERIES */
     .footer {
-        padding: 200px 40px 100px 40px;
+        padding: 80px 40px 80px 40px;
     }
 
     .footer-content {

@@ -24,24 +24,23 @@
 
         <a href="index.html" class="logo">
             <img src="assets/img/logo.svg" alt="logo">
-            NANDIER RUIZ
         </a>
 
 
         <ul class="menu__links">
             <li class="menu__item">
-                <p id="header" class="menu__link">Inicio</p>
+                <a href="#banner" class="menu__link">Inicio</a>
             </li>
             <li class="menu__item">
-                <p id="about" class="menu__link">Sobre mi</p>
+                <a href="#about" class="menu__link">Sobre mi</a>
             </li>
             <li class="menu__item">
-                <p id="contacto" class="menu__link">Contacto</p>
+                <a href="#contact" class="menu__link">Contacto</a>
             </li>
         </ul>
 
 
-        <div class="btn-look-projects btn-look-projects--header">Mira mis Proyectos Web</div>
+        <a href="#portafolio" class="menu__link btn-look-projects btn-look-projects--header">Portafolio</a>
 
 
         <div class="menu" id="menu">
@@ -51,7 +50,7 @@
         </div>
     </header>
 
-    <section class="banner">
+    <section class="banner" id="banner">
         <div id="particles-js"></div>
         <div class="banner-content">
             <div class="banner-text">
@@ -68,7 +67,7 @@
 
                 </div>
                 <div class="banner-options">
-                    <div class="btn-look-projects">Mira mis Proyectos Web</div>
+                    <a href="#portafolio" class="menu__link btn-look-projects">Mira mis Proyectos Web</a>
 
                     <a href="work-together.html" class="btn-link">
                         Trabajemos Juntos
@@ -294,87 +293,115 @@
                 capacidades y afrontarlos de manera responsable.
             </p>
         </div>
-
-        <div class="carousel-skills">
-            <h2>Herramientas y Tecnologias</h2>
-            <div class="carousel-items">
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/html-5.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/css-3.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/javascript.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/react.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/nodejs.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/mongodb.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/express.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/apollostack.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/graphql.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/redux.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/socket.io.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/php.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/mysql.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/figma.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/digital-ocean.svg" alt="html">
-                </div>
-
-                <div class="carousel-item">
-                    <img src="assets/img/technologies/sequelize.svg" alt="html">
-                </div>
-
-            </div>
-        </div>
-
     </section>
 
-    <footer class="footer">
-        <div class="work-together">
+    <div class="carousel-skills">
+        <h2>Herramientas y Tecnologias</h2>
+
+        <div class="carousel-container">
+            <button class="btn__arrow__left">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            
+            <div class="carousel-items">
+    
+                
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/html-5.svg" alt="html">
+                    <p>html</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/css-3.svg" alt="html">
+                    <p>css</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/javascript.svg" alt="html">
+                    <p>javascript</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/react.svg" alt="html">
+                    <p>react</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/nodejs.svg" alt="html">
+                    <p>nodejs</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/mongodb.svg" alt="html">
+                    <p>mongodb</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/express.svg" alt="html">
+                    <p>express</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/apollostack.svg" alt="html">
+                    <p>apollo</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/graphql.svg" alt="html">
+                    <p>graphql</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/redux.svg" alt="html">
+                    <p>redux</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/socket.io.svg" alt="html">
+                    <p>socket.io</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/php.svg" alt="html">
+                    <p>php</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/mysql.svg" alt="html">
+                    <p>mysql</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/figma.svg" alt="html">
+                    <p>figma</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/digital-ocean.svg" alt="html">
+                    <p>digital ocean</p>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="assets/img/technologies/sequelize.svg" alt="html">
+                    <p>sequelize</p>
+                </div>
+    
+            </div>
+            <button class="btn__arrow__right">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <footer class="footer" id="contact">
+        <!-- <div class="work-together">
             <p>Ya estoy preparado, ¿Tu lo estas?</p>
             <h2>Creemos un nuevo proyecto genial</h2>
             <a href="work-together.html" class="btn-look-projects">
                 Trabajemos Juntos
             </a>
-        </div>
+        </div> -->
 
         <div class="footer-content">
             <div class="footer-column">

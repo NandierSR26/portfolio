@@ -102,6 +102,10 @@
     text-align: center;
 }
 
+.form__title--2 {
+    margin-top: 5rem;
+}
+
 .formulario__item {
     display: flex;
     flex-direction: column;
@@ -154,15 +158,15 @@
     cursor: pointer;
 }
 
-.form__button--next,
 .form__button--send {
     background-color: var(--green-500);
     color: var(--green-50);
 }
 
-.form__button--back {
-    background-color: var(--red-500);
-    color: var(--red-100);
+.recomendacion {
+    font-size: .8rem;
+    color: rgb(154, 154, 154);
+    font-family: var(--font2);
 }
 
 .footer__work-together {
