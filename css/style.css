@@ -12,6 +12,7 @@
     --blue-700: #063658;
     --blue-800: #041E2F;
     --blue-900: #021521;
+    --blue-950: #010f17;
     --blue-1000: #03020F;
 
     --green-500: #2ca84f;
@@ -39,7 +40,7 @@
 }
 
 body {
-    background-color: var(--blue-900);
+    background-color: var(--blue-950);
 }
 
 .header {
@@ -180,12 +181,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     gap: 1rem;
 }
 
 .title h1 {
     font-family: var(--font1);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 2.5rem;
     padding: 0 1rem 0 0;
     color: var(--blue-100);
@@ -272,17 +274,32 @@ body {
 
 /* --------------------------------------- FEATURES SECTION 1 --------------------------------------- */
 .features-section {
-    /* background-color: var(--blue-900); */
-    padding: 200px 128px 200px 128px;
+    background-color: var(--blue-900);
+    padding: 150px 128px 150px 128px;
 }
 
 .features-section h2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: var(--font1);
     font-weight: 700;
     font-size: 2.5rem;
     color: var(--blue-100);
-    text-align: center;
     margin-bottom: 5rem;
+}
+
+.features-section h2::after {
+    content: '';
+    display: block;
+    width: 2em;
+    top: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--yellow-500);
+    position: absolute;
 }
 
 .features {
@@ -330,13 +347,14 @@ body {
     line-height: 200%;
     color: var(--grey);
     text-align: center;
+    max-width: 15rem;
 }
 
 
 /* ------------------------------------ PORTAFOLIO ------------------------------------ */
 .portafolio {
     /* background-color: var(--blue-900); */
-    padding: 0 128px 250px 128px;
+    padding: 150px 128px 150px 128px;
 }
 
 .portafolio-title {
@@ -346,35 +364,26 @@ body {
 .portafolio-title h2 {
     position: relative;
     display: flex;
+    /* text-align: center; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: var(--font1);
     font-weight: 700;
     font-size: 2.5rem;
-    color: var(--blue-100);
+    color: var(--blue-50);
     margin-bottom: 1.3rem;
-}
-
-.portafolio-title h2::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    display: block;
-    width: 35%;
-    height: 1px;
-    background-color: #fff;
-    opacity: 0.5;
 }
 
 .portafolio-title h2::after {
     content: '';
     display: block;
-    right: 0;
-    width: 35%;
-    height: 1px;
-    background-color: var(--blue-100);
+    width: 2em;
+    top: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--yellow-500);
     position: absolute;
-    opacity: 0.5;
 }
 
 .portafolio-title p {
@@ -439,11 +448,17 @@ body {
 /* ------------------------------------ ABOUT ME ------------------------------------ */
 
 .about {
-    display: grid;
-    grid-template-columns: 300px repeat(2, 1fr);
-    gap: 2rem;
     padding: var(--padding);
-    /* padding-bottom: 400px; */
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: var(--blue-900);
+}
+
+.about__row__1 {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .my-face {
@@ -463,7 +478,10 @@ body {
 }
 
 .my-face--mobile {
-    display: none;
+    background-image: url('../assets/img/photo.png');
+    background-size: 100% 100%;
+    background-position: 15px 0;
+    background-repeat: no-repeat;
 }
 
 .about-me {
@@ -511,10 +529,11 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: var(--red-500);
-    margin: 30px 128px 50px 128px;
+    /* margin: 30px 128px 50px 128px; */
     border-radius: 24px;
     padding: 3rem;
     gap: 3rem;
+    /* background-color: var(--blue-900); */
 }
 
 .carousel-skills h2 {
@@ -558,24 +577,27 @@ body {
     background-color: transparent;
     border: none;
     z-index: 50;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: .8rem .4rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
     cursor: pointer;
     outline: none;
 }
 
 .btn__arrow__left:hover,
 .btn__arrow__right:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: var(--red-800);
 }
 
 .btn__arrow__left {
-    left: 0;
+    left: -21px;
+    border-radius: 50px 0px 0px 50px;
 }
 
 .btn__arrow__right {
-    right: 0;
+    right: -21px;
+    border-radius: 0 50px 50px 0;
 }
 
 .carousel-item {

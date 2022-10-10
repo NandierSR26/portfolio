@@ -73,11 +73,6 @@
         font-size: 0.8rem;
     }
 
-    .portafolio-title h2::before,
-    .portafolio-title h2::after {
-        width: 35%;
-    }
-
     .portafolio-items {
         grid-template-columns: 1fr;
     }
@@ -97,13 +92,18 @@
 
     /* about media queries */
     .about {
+        padding-top: 200px;
+    }
+
+    .about__row__1 {
         display: block;
-        padding-top: 100px;
+        /* padding-top: 100px; */
     }
 
     .about-me {
+        position: relative;
         overflow: visible;
-        padding-top: 200px;
+        padding-top: 125px;
         height: auto;
         margin-bottom: 50px;
     }
@@ -124,10 +124,18 @@
 
     .my-face--mobile {
         position: absolute;
+        background-color: #fff;
         display: block;
-        width: 300px;
-        height: 300px;
-        top: -150px;
+        min-width: 200px;
+        min-height: 200px;
+        top: -100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .my-face--mobile img {
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -180,12 +188,7 @@
 
     /* ABOUT MEDIA QUERIES */
     .about {
-        padding: 100px 80px 0 80px;
-    }
-
-    .carousel-skills {
-        margin: 0 80px;
-        margin-bottom: 50px;
+        padding: 100px 80px 100px 80px;
     }
 
     /* FOOTER MEDIA QUERIES */
@@ -351,11 +354,7 @@
 
     /* ABOUT MEDIA QUERIES */
     .about {
-        padding: 100px 40px 0 40px;
-    }
-
-    .carousel-skills {
-        margin: 0 40px 50px 40px;
+        padding: 200px 40px 100px 40px;
     }
 
     /* FOOTER MEDIA QUERIES */
@@ -476,17 +475,9 @@
 
     /*  ABOUT MEDIA QUERIES */
     .about {
-        padding: 100px 40px 0 40px;
+        padding: 200px 40px 100px 40px;
     }
 
-    .my-face--mobile {
-        width: 200px;
-        height: 200px;
-    }
-
-    .about-me {
-        padding-top: 200px;
-    }
 
     .btn__arrow__left,
     .btn__arrow__right {
@@ -601,13 +592,13 @@
     .my-face--mobile {
         min-width: 150px;
         min-height: 150px;
-    }
-
-    .my-face--mobile {
-        width: 150px;
-        height: 150px;
         top: -75px;
     }
+
+    /* .my-face--mobile {
+        width: 150px;
+        height: 150px;
+    } */
 
     .about-me {
         padding-top: 150px;
