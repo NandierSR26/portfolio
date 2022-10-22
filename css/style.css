@@ -428,7 +428,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 4rem;
     flex: 1;
     padding: 1.5rem 1rem;
 }
@@ -446,12 +446,17 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
-    line-height: 200%;
+    line-height: 150%;
     color: var(--grey);
-    /* margin-bottom: 1.5rem; */
 }
 
-.portafolio-item-content a {
+.portafolio-item-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.more-info {
     width: fit-content;
     text-decoration: none;
     font-family: var(--font2);
@@ -459,8 +464,23 @@ body {
     font-size: 1rem;
     background-color: var(--yellow-500);
     color: var(--yellow-900);
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.3rem .8rem 0.3rem .8rem;
     border-radius: 5px;
+    text-align: center;
+}
+
+.repository {
+    /* width: fit-content; */
+    flex: 1;
+    text-decoration: none;
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--green-500);
+    color: var(--green-900);
+    padding: 0.3rem .8rem 0.3rem .8rem;
+    border-radius: 5px;
+    text-align: center;
 }
 
 
@@ -684,32 +704,34 @@ body {
     font-family: var(--font2);
 }
 
+.column-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    border-left: 2px solid var(--blue-100);
+}
+
 .column-item {
     text-decoration: none;
     font-size: 1.2rem;
     color: var(--blue-100);
     font-family: var(--font2);
     text-align: center;
-    padding: 10px 10px 10px 0;
     transition: transform .5s;
+    padding-left: .8rem;
 }
 
-.column-item--1:hover {
+.column-item:hover {
     transform: scale(1.1);
 }
 
-.column-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.column-item--1 span {
+.column-item span {
     margin-right: 1rem;
 }
 
-.column-item--1 span i {
+.column-item span i {
     font-size: 1.2rem;
 }
 
