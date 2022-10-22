@@ -9,7 +9,7 @@
     --blue-400: #108BE3;
     --blue-500: #0C6CB0;
     --blue-600: #084876;
-    --blue-700: #063658;
+    --blue-700: #042339;
     --blue-800: #041E2F;
     --blue-900: #021521;
     --blue-1000: #03020F;
@@ -74,7 +74,7 @@
     }
 
     .portafolio-items {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .portafolio-item-text h3 {
@@ -132,7 +132,7 @@
         border-radius: 50%;
         overflow: hidden;
     }
-    
+
     .my-face--mobile img {
         width: 100%;
         height: 100%;
@@ -183,12 +183,12 @@
 
     /* PORTAFOLIO MEDIA QUERIES */
     .portafolio {
-        padding: 0 80px 250px 80px;
+        padding: 150px 80px 150px 80px;
     }
 
     /* ABOUT MEDIA QUERIES */
     .about {
-        padding: 100px 80px 100px 80px;
+        padding: 200px 80px 100px 80px;
     }
 
     /* FOOTER MEDIA QUERIES */
@@ -312,7 +312,7 @@
         top: 0px;
         bottom: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.9);
         overflow-y: auto;
         display: grid;
         grid-auto-rows: max-content;
@@ -349,7 +349,7 @@
 
     /* PORTAFOLIO MEDIA QUERIES */
     .portafolio {
-        padding: 0px 40px 250px 40px;
+        padding: 100px 40px 100px 40px;
     }
 
     /* ABOUT MEDIA QUERIES */
@@ -386,7 +386,7 @@
 @media (max-width: 700px) {
 
     body {
-        background-color: var(--blue-800);
+        background-color: var(--blue-900);
     }
 
     /* BANNER MEDIA QUERIES */
@@ -443,6 +443,7 @@
     /* FEATURES MEDIA QUERIES */
     .features-section {
         padding: 100px 40px 100px 40px;
+        background-color: var(--blue-800);
     }
 
     .features-section h2 {
@@ -457,7 +458,7 @@
     }
 
     .feature p {
-        padding: 0 4rem;
+        padding: 0;
     }
 
     .feature-icon {
@@ -473,9 +474,14 @@
         padding: 100px 40px 250px 40px;
     }
 
+    .portafolio-item {
+        background-color: var(--blue-700);
+    }
+
     /*  ABOUT MEDIA QUERIES */
     .about {
         padding: 200px 40px 100px 40px;
+        background-color: var(--blue-800);
     }
 
 
@@ -515,6 +521,12 @@
 }
 
 @media (max-width: 600px) {
+
+    /* PORTAFOLIO */
+    .portafolio-items {
+        grid-template-columns: 1fr;
+    }
+
     .form__title {
         font-size: 1.5rem;
     }
@@ -540,8 +552,6 @@
     .features p {
         padding: 0
     }
-
-
 
     .formulario {
         display: flex;
