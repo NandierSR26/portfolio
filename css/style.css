@@ -156,9 +156,10 @@ body {
 
 .banner-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%;
+    gap: 5rem;
 }
 
 .banner-text {
@@ -267,6 +268,7 @@ body {
 
 .banner-image img {
     width: 100%;
+    max-width: 460px;
 }
 
 
